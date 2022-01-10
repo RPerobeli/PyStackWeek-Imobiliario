@@ -12,7 +12,7 @@
         <div class="col-md-3 sidebar">
             <div class="logo_sidebar">
                 <h2 class="logo">
-                <img class="img_logo_sidebar" src="">IMOBI
+                    <img class="img_logo_sidebar" src="">IMOBI
                 </h2>
             </div>
             <div class="corpo_sidebar">
@@ -33,22 +33,25 @@
                 <form action="{%url 'cadastro'%}" method="POST">{% csrf_token %}
                     <h2 class="titulo_area_cadastrar">Cadastre-se</h2>
                     {% if messages %}
-                        {% for message in messages %}
-                            <div class="alert {{message.tags}}">
+                    {% for message in messages %}
+                    <div class="alert {{message.tags}}">
                         {{message}}
-                            </div>
-                        {% endfor %}
+                    </div>
+                    {% endfor %}
                     {% endif %}
                     <br>
-                        <input name="username" class="input_cadastrar input_cadastrar_nome" type="text" placeholder="Username...">
+                    <input name="username" class="input_cadastrar input_cadastrar_nome" type="text"
+                        placeholder="Username...">
                     <br>
                     <br>
-                        <input name="email" class="input_cadastrar input_cadastrar_email" type="text" placeholder="Email...">
+                    <input name="email" class="input_cadastrar input_cadastrar_email" type="text"
+                        placeholder="Email...">
                     <br>
                     <br>
-                        <input name="senha" class="input_cadastrar input_cadastrar_senha" type="password" placeholder="Senha...">
+                    <input name="senha" class="input_cadastrar input_cadastrar_senha" type="password"
+                        placeholder="Senha...">
                     <br>
-                        <input class="btn_cadastrar" type="submit" value="Cadastrar">
+                    <input class="btn_cadastrar" type="submit" value="Cadastrar">
                 </form>
             </div>
         </div>
