@@ -6,6 +6,7 @@ python -m venv venv
 
 ## Para entrar no VENV no ambiente Windows:
 Com powershell > venv\Scripts\Activate.ps1
+
 Com CMD > venv\Scripts\activate.bat
 
 ## para rodar a aplicação:
